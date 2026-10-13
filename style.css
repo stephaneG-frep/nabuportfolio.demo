@@ -1,15 +1,15 @@
 :root{
-  --primary:#27AD0E;--secondary:#FF2E2E;--accent:#00E5FF;
-  --bg:#050607;--surface:#0F1412;--text:#D9FFD2;--muted:#6F8F74;
+  --primary:#2F855A;--secondary:#0EA5E9;--accent:#D97706;
+  --bg:#F4F7F1;--surface:#FFFFFF;--text:#1B2B1F;--muted:#5E7263;
   --on-primary:#FFFFFF;
-  --card-bg:rgba(15, 20, 18, 0.85);--card-border:1.5px solid rgba(39, 173, 14, 0.55);--card-shadow:0 0 11px rgba(39, 173, 14, 0.21);
-  --radius:2px;--gap:20px;--section:88px;
-  --maxw:1040px;--fs:15.2px;
-  --font-body:'Roboto Condensed', 'Arial Narrow', sans-serif-condensed, sans-serif;--font-head:'Roboto Condensed', 'Arial Narrow', sans-serif-condensed, sans-serif;--head-weight:800;
+  --card-bg:rgba(255, 255, 255, 1.00);--card-border:1px solid rgba(27, 43, 31, 0.06);--card-shadow:0 4px 11px rgba(0, 0, 0, 0.02);
+  --radius:14px;--gap:20px;--section:88px;
+  --maxw:1040px;--fs:16.0px;
+  --font-body:'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;--font-head:Georgia, 'Times New Roman', serif;--head-weight:700;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:var(--font-body);font-size:var(--fs);line-height:1.65;color:var(--text);background:radial-gradient(40rem 30rem at 0% 0%, rgba(39, 173, 14, 0.32), transparent 70%), radial-gradient(36rem 28rem at 100% 20%, rgba(255, 46, 46, 0.26), transparent 70%), radial-gradient(40rem 30rem at 50% 100%, rgba(0, 229, 255, 0.20), transparent 70%), #050607;background-attachment:fixed;min-height:100vh;-webkit-font-smoothing:antialiased}
+body{margin:0;font-family:var(--font-body);font-size:var(--fs);line-height:1.65;color:var(--text);background:linear-gradient(180deg, #F4F7F1 0%, #DCE9DF 55%, #D4ECF0 100%);background-attachment:fixed;min-height:100vh;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:var(--primary);text-decoration:none}
 a:hover{text-decoration:underline}
@@ -66,7 +66,7 @@ section{padding:calc(var(--section)/2) 0}
 .hero-centered .hero .avatar,.hero-banner .hero .avatar{margin:0 auto 1.4em}
 .hero-centered .hero .lead,.hero-banner .hero .lead{margin-left:auto;margin-right:auto}
 .hero-centered .hero .links-row,.hero-banner .hero .links-row{justify-content:center}
-.hero-banner .hero{background:linear-gradient(135deg,var(--primary),var(--secondary));color:var(--on-primary);border-radius:0 0 calc(var(--radius) * 2) calc(var(--radius) * 2)}
+.hero-banner .hero{background:linear-gradient(180deg,var(--primary),var(--secondary));color:var(--on-primary);border-radius:0 0 calc(var(--radius) * 2) calc(var(--radius) * 2)}
 .hero-banner .hero .title,.hero-banner .hero .lead{color:var(--on-primary);opacity:.92}
 .hero-banner .hero .btn{background:var(--on-primary);color:var(--primary)}
 .hero-banner .hero .btn.ghost{background:transparent;color:var(--on-primary);border-color:var(--on-primary)}
@@ -74,7 +74,7 @@ section{padding:calc(var(--section)/2) 0}
 .hero-editorial .hero .wrap{display:grid;grid-template-columns:1fr auto;gap:2em;align-items:end}
 .hero-minimal .hero{padding-top:clamp(40px,8vw,90px)}
 .hero-minimal .hero h1{font-size:clamp(2rem,5vw,3rem)}
-.terminal{font-family:'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace;background:rgba(15, 20, 18, 0.90);border:1px solid color-mix(in srgb,var(--primary) 50%,transparent);border-radius:var(--radius);box-shadow:0 0 40px color-mix(in srgb,var(--primary) 20%,transparent);overflow:hidden}
+.terminal{font-family:'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace;background:rgba(255, 255, 255, 0.90);border:1px solid color-mix(in srgb,var(--primary) 50%,transparent);border-radius:var(--radius);box-shadow:0 0 40px color-mix(in srgb,var(--primary) 20%,transparent);overflow:hidden}
 .terminal .bar{padding:.55em .9em;background:color-mix(in srgb,var(--primary) 12%,transparent);display:flex;gap:.45em}
 .terminal .bar i{width:.75em;height:.75em;border-radius:50%;background:var(--muted);display:block}
 .terminal .bar i:nth-child(1){background:#ff5f57}.terminal .bar i:nth-child(2){background:#febc2e}.terminal .bar i:nth-child(3){background:#28c840}
